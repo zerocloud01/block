@@ -13,14 +13,16 @@ int ri(int l,int r)
 
 signed main(void)
 {
-    // std与解答的名称
+    // std与解答的名称，保证与文件外一致
     string std = "std";
     string sol = "solve";
 
     // 编译
     cout << "Compiling..." << endl;
     string std_com = "g++ " + std + ".cpp -o " + std;
+    // g++ std.cpp -o std
     string sol_com = "g++ " + sol + ".cpp -o " + sol;
+    // g++ sol.cpp -o sol
     system(std_com.c_str());
     system(sol_com.c_str());
 
@@ -58,12 +60,14 @@ signed main(void)
     string d1,d2;
     while(getline(std_in,d1) && getline(sol_in,d2))
     {
+        cout << "test-" << ++ t << ' ';
         if(d1 != d2)
         {
-            cout << "test-" << ++ t << '\n';
+            cout << "WA\n";
             bat << "test-" << t << "\n";
             bat << d1 << '\n' << d2 << '\n';
         }
+        else    cout << "AC\n";
     }
     std_in.close();
     sol_in.close();
