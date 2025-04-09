@@ -12,6 +12,5 @@ int main()
         system("std.exe < data.in > std.out");
         system("solve.exe < data.in > solve.out");
         if(system("fc std.out solve.out > diff.log"))   cout << "WA\n";
-        else    cout << "AC\n";
     }
 }
