@@ -10,6 +10,6 @@ int main()
         system("generater.exe > data.in");
         system("std.exe < data.in > std.out");
         system("solve.exe < data.in > solve.out");
-        if(system("fc std.out solve.out > diff.log"))   cout << "test" << i << "WA\n";
+        if(system("fc std.out solve.out > diff.txt"))   cout << "test" << i << "WA\n";
     }
 }
