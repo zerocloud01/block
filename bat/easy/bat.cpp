@@ -7,7 +7,7 @@ int main()
     int T = 1e3; // 数据次数，也可以写死循环直到wa。
     for(int i=1;i<=100;++i)
     {
-        system("generater.exe > data.in");
+        system("generator.exe > data.in");
         system("std.exe < data.in > std.out");
         system("solve.exe < data.in > solve.out");
         cout << "test:" << i;
