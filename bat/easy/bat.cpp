@@ -10,6 +10,10 @@ int main()
         system("generater.exe > data.in");
         system("std.exe < data.in > std.out");
         system("solve.exe < data.in > solve.out");
-        if(system("fc std.out solve.out > diff.txt"))   cout << "test" << i << "WA\n";
+        cout << "test:" << i;
+        if(system("fc std.out solve.out > diff.txt"))   cout << "WA\n";
+        else    cout << "AC\n";
     }
+
+    return 0;
 }
