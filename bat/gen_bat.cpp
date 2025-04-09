@@ -1,8 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// 随机数种子
 random_device rd;
-mt19937 cri(rd());
+mt19937 cri(rd()*time(0));
 
 int ri(int l,int r)
 {
