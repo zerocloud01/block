@@ -1,3 +1,5 @@
+# gemini 生成
+
 import numpy as np
 from scipy.special import jv, kv, jn_zeros
 from scipy.optimize import brentq
