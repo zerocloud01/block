@@ -83,7 +83,7 @@ for m_azimuthal, radial_indices in modes_to_plot_detailed:
         b_values = []
         V_plot_points = [] 
 
-        mode_str = f"LP{m_azimuthal}{n_radial_target}"
+        mode_str = rf'$LP_{{{m_azimuthal}{n_radial_target}}}$'# 渲染为 LaTex
         vc_approx = cutoff_approximations.get(mode_str, 0)
 
         for V_val in V_arr:
